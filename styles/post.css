@@ -1,0 +1,38 @@
+.tooltiptext{
+  background: #90ee90;
+  padding: 8px 10px;
+  border-radius: 15px;
+}
+.button{
+  background: mediumseagreen;
+  padding: 8px 10px;
+  width: 200px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+textarea{
+  width: 100%;
+  height: 80px;
+}
+.submitpostbutton{
+  background: mediumseagreen;
+  padding: 10px 12px;
+  width: 95%;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+
+}
+.sub-nav-active{
+  background: #0000FF;
+  color: #fff;
+}
+#pasteform{
+  display: none;
+}
+#diseaseform{
+  display: none;
+}

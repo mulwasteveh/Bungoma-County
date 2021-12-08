@@ -1,0 +1,56 @@
+.profile-holder{
+	
+	display: flex;
+	padding: 16px;
+}
+.avator-holder{
+	
+	width: 30%;
+	margin-left: 10%;
+}
+.details-holder{
+	
+	width: 50%;
+	margin-top: 24px;
+}
+.myinputcmbjoin{
+  padding: 8px 12px;
+  width: 30%;
+  outline: none;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: #00000000;
+}
+.myinputtxtjoin{
+  padding: 8px 12px;
+  width: 60%;
+  outline: none;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.inputdiv{
+border-bottom: 1px solid grey;
+}
+
+
+@media(max-width: 800px){
+	.profile-holder{
+	
+	display: block;
+	padding: 16px;
+}
+.avator-holder{
+	
+	width: 100%;
+	margin-left: 0%;
+}
+.details-holder{
+	
+	width: 100%;
+	margin-top: 24px;
+}
+}

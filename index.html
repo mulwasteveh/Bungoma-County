@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bungoma County</title>
+	<link rel="stylesheet" href="styles/footer.css">
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/profile.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+</head>
+<style type="text/css">
+	.home{
+  height: 100vh;
+  width: 100%;
+  background: url("assests/mainbg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+</style>
+<body>
+<nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="#">Bungoma County Rentals Market-Place</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Rooms</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="auth.html">Account</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="home">
+  	<h1><b><i style="color: #0000FF">Connect with all House Owners all over Bungoma County</i></b></h1>
+
+
+  </section>
+  <!-- content -->
+  <div class="text">
+    <div class="wrapper">
+      <div class="card front-face">
+        <img src="assests/hidaya.png" alt="Flip Card">
+         <div class="title">Bedsitter</div>
+      </div>
+      <div class="card back-face">
+        <img src="assests/hidaya.png" alt="Flip Card">
+        <div class="info">
+          <div class="title">Bedsitter</div>
+          <p>Western kenya</p>
+        </div>
+        <button class="viewmore">View more</button>
+      </div>
+  </div>
+</div>
+<!-- end content -->
+<!-- post here -->
+<div id="postform">
+ <div class="profile-holder" >
+  <div class="avator-holder">
+    <center>
+    <img src="assests/imageholder.png" width="225px"><br><br>
+ 			<div class="button">
+    		<i class="fa fa-map-marker"></i>
+    		<h3 class="uploadbutton">Location</h3>
+    
+    	</div>
+    </center>
+  </div>
+  <div class="details-holder">
+    <center>
+      <h3 class="colorgreen">Post title</h3><br>
+      <label><p>Date the post is made</p></label><br>
+    
+    <label><p>Category of the Available Room</p></label><br>
+   <label><p>The number of Rooms Available</p></label><br>
+   
+    <div>
+      <p>Cost per Room</p>
+      <br>
+   <label><p>Note/comment</p></label><br>
+   
+    </div>
+    
+   
+  </div>
+
+</div>
+</div>
+<!-- end of post -->
+
+
+
+<!-- footer -->
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+          <img src="assests/mainbg.jpg" height="70px">
+				<h3>About<span>Bungoma County Rentals Market-Place</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					|
+					<a href="#">Blog</a>
+					|
+					<a href="#">About</a>
+					|
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">© 2021 Bungoma County Rooms Market-Place. Ltd.</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>50200 - Bungoma Kenya,
+						 #################</span>
+						###, #### ##### - 400710</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+254-70027-3632</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:stephenmulwa@gmail.com">bungomacountymarketplace@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the market-place</span>
+					To connect House owners to post their Rooms and get in touch with customers </p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook "></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-telegram"></i></a>
+				</div>
+			</div>
+		</footer>
+
+
+  <script>
+  let nav = document.querySelector("nav");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+      }else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+</html>

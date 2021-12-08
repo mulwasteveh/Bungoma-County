@@ -1,0 +1,78 @@
+.postholder{
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  background: #f1f1f1;
+  border-bottom: 1px solid green;
+}
+.imagepostholder{
+  max-width: 30%;
+  padding: 8px;
+}
+.postdetails{
+  width: 30%;
+  padding: 8px;
+}
+.postdescription{
+  width: 40%;
+  padding: 8px;
+
+}
+.scroll-table{
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.table-holder{
+   background: #fff;
+   width: 80%;
+   min-width: 750px;
+  margin-left: 10%;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0.5rem 0 rgba(0 ,0,0,0.3);
+  padding: 8px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+
+}
+.table-caption{
+  display: flex;
+ justify-content: center;
+  width: 100%;
+  border-bottom: 2px solid grey;
+  padding-bottom: 8px;
+}
+.table-holder table{
+  width: 100%;
+ }
+ .table-holder thead{
+  color: #0000FF;
+  font-size: 21px;
+  text-align: center;
+  background-color: #fff;
+
+ }
+ .table-holder th{
+  padding: 12px 8px;
+
+ }
+  .table-holder th:hover{
+  cursor: pointer;
+
+ }
+ .table-holder th:hover{
+  padding: 12px 8px;
+  background: #0000FF;
+  color: #fff;
+
+ }
+  .table-holder td{
+    text-align: center;
+    font-size: 18px;
+    padding: 8px 6px;
+    
+  }
+
+
+  /*small screens*/
+
+  
