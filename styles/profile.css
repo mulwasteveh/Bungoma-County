@@ -54,3 +54,14 @@ border-bottom: 1px solid grey;
 	margin-top: 24px;
 }
 }
+.submitprofilebutton{
+  margin-top: 16px;
+  background: #0000FF;
+  padding: 10px 12px;
+  width: 95%;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #FFFF;
+}

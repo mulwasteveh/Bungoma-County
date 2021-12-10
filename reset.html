@@ -4,14 +4,24 @@
   <meta charset="utf-8">
   <title>Bungoma County</title>
   <link rel="stylesheet" href="styles/footer.css">
-  <link rel="stylesheet" href="styles/dashboard.css">
-  
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/profile.css">\
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
 </head>
-
+<style type="text/css">
+  .home{
+  height: 100vh;
+  width: 100%;
+  background: url("assests/mainbg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+</style>
 <body>
 <nav>
     <div class="nav-content">
@@ -19,21 +29,28 @@
         <a href="#">Bungoma County Rentals Market-Place</a>
       </div>
       <ul class="nav-links">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="connect.html">Connect</a></li>
-        <li><a href="post.html">Post</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="#" id="btnlogout">Logout</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Rooms</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="auth.html">Account</a></li>
       </ul>
     </div>
   </nav>
-  <!-- start of Content -->
+  <section class="home">
+    <h1><b><i style="color: #0000FF">Connect with all House Owners all over Bungoma County</i></b></h1>
 
-  <main>
+
+  </section>
+<!-- Content -->
+
+ <main>
         <section class="container reset-container">
           <fieldset>
             <div>
-              <img src="images/background.jpg">
+              <img src="assests/mainbg.jpg" style="width: 300px;
+    height: 150px;
+    margin: auto;
+    display: block">
             </div>
             <div>
               <label for="mail">Enter Email</label> <br>
@@ -44,7 +61,10 @@
       </section>
      
     </main> 
-  <!-- End of Content -->
+
+<!-- End of Content -->
+
+
 
 <!-- footer -->
 <footer class="footer-distributed">
@@ -69,7 +89,7 @@
       <div class="footer-center">
         <div>
           <i class="fa fa-map-marker"></i>
-            <p><span>50200 Bungoma, Kenya</span>--------</p>
+            <p><span>50200 Bungoma, Kenya</span></p>
         </div>
 
         <div>
@@ -78,18 +98,19 @@
         </div>
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="mailto:stephenmulwa344@gmail.com">bungomacountymarketplace@gmail.com</a></p>
+          <p><a href="mailto:stephenmulwa@gmail.com">bungomacountymarketplace@gmail.com</a></p>
         </div>
       </div>
       <div class="footer-right">
         <p class="footer-company-about">
           <span>About the market-place</span>
-          To connect House owners to post their Rooms and get in touch with customers. </p>
+          To connect House owners to post their Rooms and get in touch with customers </p>
         <div class="footer-icons">
-          <a href="#"><i class="fa fa-facebook "></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
           <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-facebook "></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          
         </div>
       </div>
     </footer>
@@ -106,11 +127,11 @@
     }
   </script>
 
-  <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
 <script type="text/javascript" src="js/connection.js"></script>
-<script type="text/javascript" src="js/profile.js"></script>
+<script type="text/javascript" src="js/reset.js"></script>
 
 </body>
 </html>
