@@ -26,6 +26,7 @@ button {
     margin: 20px 47px 0px 0px;
     padding: 10px 20px;
     border: 1px solid #2196f3;
+    border-radius: 20%;
     float: right;
     background-color: #0000FF;
     color: white;

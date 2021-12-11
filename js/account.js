@@ -1,6 +1,9 @@
  //global var
 let fullName,email,password,confirmpassword;
 
+let btnshowpassword1 = document.getElementById('showpassword1');
+let btnshowpassword2 = document.getElementById('showpassword2');
+
 // signup new users
 let btnRegister = document.getElementById('btnRegister');
 btnRegister.addEventListener('click', () =>{
@@ -143,3 +146,27 @@ firebase.auth().signInWithEmailAndPassword(username, userpassword)
   });
      }
 })
+
+
+// show and hide password for the Login page
+   btnshowpassword1.addEventListener('click', () =>{
+      var passwordeye1  = document.getElementById('txtUserPassword');
+    if (passwordeye1.type === "password") {
+      passwordeye1.type= "text";
+    }else{
+      passwordeye1.type= "password";
+    }
+   })
+
+   // show and hide password for the signUp page
+   btnshowpassword2.addEventListener('click', () =>{
+      var passwordeye2  = document.getElementById('txtpassword');
+      var passwordeye3 = document.getElementById('txtconfirmpassword')
+    if (passwordeye2.type === "password") {
+      passwordeye2.type = "text";
+      passwordeye3.type = "text"
+    }else{
+      passwordeye2.type = "password";
+      passwordeye3.type = "password";
+    }
+   })
