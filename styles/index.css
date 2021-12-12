@@ -77,4 +77,22 @@
 .back-face .viewmore:hover{
   background: #0000FF;
 }
+.divmainAll{
+  background: #e0ac1c;
+}
+.fieldset1{
+  width: 20%;
+  height: 150px
+}
+.divrecentpostTittle{
+  background: #0000FF;
+  height: 20%;
+  width: 100%;
+  color: #ffff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+.divrecentpost{
 
+}
