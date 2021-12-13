@@ -12,18 +12,8 @@ callpaste.addEventListener('click', () =>{
 	disease.style.display = "none";
 	postforms.style.display = "none";
 	callpaste.classList.add("sub-nav-active");
-	calldisease.classList.remove("sub-nav-active");
 	callposts.classList.remove("sub-nav-active");
 	localStorage.setItem("formCode", "2");
-})
-calldisease.addEventListener('click', () =>{
-	pasteform.style.display = "none";
-	disease.style.display = "block";
-	postforms.style.display = "none";
-	calldisease.classList.add("sub-nav-active");
-	callpaste.classList.remove("sub-nav-active");
-	callposts.classList.remove("sub-nav-active");
-	localStorage.setItem("formCode", "3");
 })
 callposts.addEventListener('click', () =>{
 	postforms.style.display = "block";
@@ -50,12 +40,14 @@ let formNumber = localStorage.getItem("formCode");
 if (formNumber == 2) {
     pasteform.style.display = "block";
 	disease.style.display = "none";
+	postforms.style.display = "none";
 	callpaste.classList.add("sub-nav-active");
 	calldisease.classList.remove("sub-nav-active");
 	callposts.classList.remove("sub-nav-active");
 }else if(formNumber == 3){
     pasteform.style.display = "none";
 	disease.style.display = "block";
+	postforms.style.display = "none";
 	calldisease.classList.add("sub-nav-active");
 	callpaste.classList.remove("sub-nav-active");
 	callposts.classList.remove("sub-nav-active");

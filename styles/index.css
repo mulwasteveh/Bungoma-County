@@ -78,11 +78,16 @@
   background: #0000FF;
 }
 .divmainAll{
-  background: #e0ac1c;
+  display: flex;
+}
+.divmainAll1{
+   background: #e0ac1c;
+   width: 25%;
+   margin-left: 5px;
 }
 .fieldset1{
-  width: 20%;
-  height: 150px
+  width: 75%;
+  height: 150px;
 }
 .divrecentpostTittle{
   background: #0000FF;
@@ -93,6 +98,8 @@
   text-align: center;
   font-size: 30px;
 }
-.divrecentpost{
-
+.divmainAll2{
+  background: #0000FF;
+  height: 200px;
+  width: 75%;
 }
