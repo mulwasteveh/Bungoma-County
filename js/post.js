@@ -1,11 +1,15 @@
 let usernamedisplay = document.getElementById('usernamedisplay');
+let postId;
 
 auth.onAuthStateChanged(function(user){
       if(user){
          var email = user.email;
+         var postId = user.uid;
         //alert("Active user" + email);
         // console.log(email);
-         usernamedisplay.innerHTML = email + " ";
+         usernamedisplay.innerHTML = email + " " + postId;
+         localStorage.setItem("useId", postId);
+
          
       }else{
         //alert("No Active user");
@@ -124,7 +128,8 @@ if (roomDescription == "" || roomPrice == "") {
 //inserting posts to firebase db
 function insertPostToFirebase(postdate, newcategory, newbedrooms, newbathrooms, roomPrice, roomDescription, Ttimestamp) {
 	// body...
-	firebase.database().ref('RoomPosts/' + Ttimestamp).set({
+	let newpostId = localStorage.getItem("useId");
+	firebase.database().ref('RoomPosts/' + newpostId).set({
 
 Postdate: postdate,
 Category: newcategory,
@@ -196,3 +201,54 @@ btnroomPrice.addEventListener("keyup", ()=>{
 		}
 
 });
+
+//getting data firebase to the interface
+
+let dateYouPosted = document.getElementById('DateYouPosted');
+let roomCategory = document.getElementById('RoomCategory');
+let bedroomNumber = document.getElementById('BedroomNumber');
+let bathroomNumber = document.getElementById('BathroomNumber');
+let roomPrice = document.getElementById('RoomPrice');
+let descriptionRoom = document.getElementById('DescriptionRoom');
+getAllPosts(postId);
+function getAllPosts(postId) {
+	
+	// body...
+	firebase.database().ref('RoomPosts/' + postId).on('value',function(snapshot){
+    try{
+ 
+      Bathrooms = snapshot.val().Bathrooms;
+      Bedrooms = snapshot.val().Bedrooms;
+      Category = snapshot.val().Category;
+      Description = snapshot.val().Description;
+      Postdate = snapshot.val().Postdate;
+      Price = snapshot.val().Price;
+      
+      dateYouPosted.innerHTML = "Date posted:  " + Postdate;
+      roomCategory.innerHTML = "Room Category:  " + Category;
+      bedroomNumber.innerHTML = "Number of Bedrooms:  " + Bedrooms;
+      bathroomNumber.innerHTML = "Number of Bathrooms:  " + Bathrooms;
+      roomPrice.innerHTML = "Price per Room:  " + Price;
+      descriptionRoom.innerHTML = "Room Description:  " + Description;
+
+     
+      /*localStorage.setItem('newquestion',newquestion );
+      localStorage.setItem('newquestionnumber',newquestionnumber );
+      localStorage.setItem('newanswer1',newanswer1 );
+      localStorage.setItem('newanswer2',newanswer2 );
+      localStorage.setItem('newanswer3',newanswer3 );
+      localStorage.setItem('quizcode', questionnumber)
+*/    
+      
+
+      
+  }catch(err){
+    //alert(typeof err);
+    console.log(err.message);
+ 
+  } 
+})
+}
+	let newpostId = localStorage.getItem("useId");
+
+getAllPosts(newpostId);
