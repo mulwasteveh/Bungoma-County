@@ -40,9 +40,8 @@ function getAllUserData(email){
 })
 }
 
-
-let signOutnow = document.getElementById('btnlogout');
 //// / sign out user
+let signOutnow = document.getElementById('btnlogout');
 
 signOutnow.addEventListener('click' , () =>{
    localStorage.clear();

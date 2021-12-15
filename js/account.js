@@ -33,7 +33,7 @@ firebase.database().ref('bungomausers/' + indexedemail).set({
     },  (error) => {
   if (error) {
     // The write failed...
-     alert('Registration Faled');
+     alert('Registration Failed');
      btnRegister.value ="Register now";
   }else{
 // end of realtime database
