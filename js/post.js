@@ -7,7 +7,7 @@ auth.onAuthStateChanged(function(user){
          var postId = user.uid;
         //alert("Active user" + email);
         // console.log(email);
-         usernamedisplay.innerHTML = email + " " + postId;
+         usernamedisplay.innerHTML = email + " ";
          localStorage.setItem("useId", postId);
 
          
@@ -47,7 +47,7 @@ callposts.addEventListener('click', () =>{
 	localStorage.setItem("formCode", "1");
 })
 uploadpaste.addEventListener('click', () =>{
-	alert('upload paste coming soon');
+	alert('Room Photos coming soon. currently working on it!!!');
 	
 })
 uploadroom.addEventListener('click', () =>{
@@ -109,6 +109,7 @@ function addPost() {
 console.log(datetoday);
 if (roomDescription == "" || roomPrice == "") {
 	alert('All details required');
+	butttonPost.innerHTML ="Post Rooms";
 }else{
 
   if (category.selectedIndex >= 3) {
@@ -224,12 +225,12 @@ function getAllPosts(postId) {
       Postdate = snapshot.val().Postdate;
       Price = snapshot.val().Price;
       
-      dateYouPosted.innerHTML = "Date posted:  " + Postdate;
-      roomCategory.innerHTML = "Room Category:  " + Category;
-      bedroomNumber.innerHTML = "Number of Bedrooms:  " + Bedrooms;
-      bathroomNumber.innerHTML = "Number of Bathrooms:  " + Bathrooms;
-      roomPrice.innerHTML = "Price per Room:  " + Price;
-      descriptionRoom.innerHTML = "Room Description:  " + Description;
+      dateYouPosted.innerHTML = "<b>Date posted</b>: &nbsp  " + Postdate;
+      roomCategory.innerHTML = "<b>Room Category</b>: &nbsp " + Category;
+      bedroomNumber.innerHTML = "<b>Number of Bedrooms</b>: &nbsp " + Bedrooms;
+      bathroomNumber.innerHTML = "<b>Number of Bathrooms</b>: &nbsp " + Bathrooms;
+      roomPrice.innerHTML = "<b>Price per Room</b>: &nbsp " + Price;
+      descriptionRoom.innerHTML = "<b>Room Description</b>: &nbsp " + Description;
 
      
       /*localStorage.setItem('newquestion',newquestion );

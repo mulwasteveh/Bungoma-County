@@ -14,13 +14,13 @@ allpostholder.innerHTML += `
   <div class="details-holder">
     <center>
       <h3 class="colorgreen"> ${Category}</h3><br>
-      <label><p><b>Date you are posting:</b> &nbsp; ${Postdate}</p></label><br>
+      <label><p>Date you are posting &nbsp; ${Postdate}</p></label><br>
     
-    <label><p><b>Category of the Room:</b> &nbsp; ${Category}</p></label><br>
-   <label><p><b>Number of Bedrooms:</b> &nbsp; ${Bedrooms}</p></label><br>
-   <label><p><b>Number of Bathrooms:</b> &nbsp; ${Bathrooms}</p></label><br>
-    <label><p><b>Price of the Room:</b> &nbsp; ${Price}</p></label><br>
-   <label><p><b>Description of the Room:</b> &nbsp; ${Description}</p></label><br>
+    <label><p>Category of the Room &nbsp; ${Category}</p></label><br>
+   <label><p>Number of Bedrooms &nbsp; ${Bedrooms}</p></label><br>
+   <label><p>Number of Bathrooms &nbsp; ${Bathrooms}</p></label><br>
+    <label><p>Price of the Room &nbsp; ${Price}</p></label><br>
+   <label><p>Description of the Room &nbsp; ${Description}</p></label><br>
    
     
    
@@ -38,7 +38,7 @@ allpostholder.innerHTML += `
 FetchAlldata();
 
 function FetchAlldata(){ 
-	firebase.database().ref('RoomPosts').once('value', function(snapshot) {
+	firebase.database().ref('RoomPosts').orderByChild('Category').limitToFirst(3).once('value', function(snapshot) {
 		snapshot.forEach( 
 			function(Childsnapshot) {
    Postdate = Childsnapshot.val().Postdate;
