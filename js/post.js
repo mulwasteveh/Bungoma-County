@@ -1,3 +1,4 @@
+//code start js
 let usernamedisplay = document.getElementById('usernamedisplay');
 let postId;
 
@@ -9,8 +10,7 @@ auth.onAuthStateChanged(function(user){
         // console.log(email);
          usernamedisplay.innerHTML = email + " ";
          localStorage.setItem("useId", postId);
-
-         
+    
       }else{
         //alert("No Active user");
         window.location.href='auth.html';
@@ -258,3 +258,5 @@ function getAllPosts(postId) {
 	let newpostId = localStorage.getItem("useId");
 
 getAllPosts(newpostId);
+
+// end
