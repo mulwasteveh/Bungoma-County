@@ -63,3 +63,18 @@ txtUserFullname.value = fullname;
 
 }
 
+//validating phone number
+let txtUserPhone = document.getElementById('txtUserPhone');
+txtUserPhone.addEventListener("keyup", ()=>{
+  var txtUserPhone = document.getElementById("txtUserPhone").value;
+    var chk = /^[-+]?[0-9]+$/;
+    if(chk.test(txtUserPhone)){
+
+      return true;
+    }else{
+        alert('Wrong format!!!!');
+      return false;
+    }
+
+});
+

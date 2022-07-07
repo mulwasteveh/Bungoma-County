@@ -46,12 +46,17 @@ callposts.addEventListener('click', () =>{
 	callpaste.classList.remove("sub-nav-active");
 	localStorage.setItem("formCode", "1");
 })
+
+
+// uploading an image to firebase
 uploadpaste.addEventListener('click', () =>{
 	alert('Room Photos coming soon. currently working on it!!!');
 	
 })
+// End of uploading an image to firebase
+
 uploadroom.addEventListener('click', () =>{
-	alert('upload room coming soon');
+	alert('Not yet there');
 	
 })
 
